@@ -8,3 +8,11 @@ services:
       - 8080
     ports:
       - 8080:8080
+
+  nginx:
+    container_name: nginx
+    image: hyerin9177/action-sample-nginx
+    ports:
+      - 80:80
+    depends_on:
+      - action-sample
