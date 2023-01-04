@@ -49,5 +49,6 @@ jobs:
         script: |
           sudo docker rm -f $(docker ps -qa)
           sudo docker pull ${{ secrets.DOCKER_REPO }}/action-sample
+          sudo docker pull ${{ secrets.DOCKER_REPO }}/action-sample-nginx
           docker-compose up -d
           docker image prune -f
