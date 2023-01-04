@@ -1,8 +1,8 @@
 version: '3'
 services:
 
-  action-sample:
-    container_name: action-sample
+  web:
+    container_name: web
     image: hyerin9177/action-sample
     expose:
       - 8080
@@ -15,4 +15,4 @@ services:
     ports:
       - 80:80
     depends_on:
-      - action-sample
+      - web
