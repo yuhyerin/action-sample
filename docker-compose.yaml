@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  action-sample:
+    container_name: action-sample
+    image: hyerin9177/action-sample
+    expose:
+      - 8080
+    ports:
+      - 8080:8080
